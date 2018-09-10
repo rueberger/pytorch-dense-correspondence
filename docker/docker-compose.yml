@@ -3,6 +3,7 @@ services:
   dense-seg:
     build:
       context: dense-seg/
+    image: 'rueberger/dense-correspondence'
     networks:
       - core
     volumes:

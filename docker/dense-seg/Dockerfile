@@ -1,4 +1,4 @@
-FROM rueberger/dense-correspondence
+FROM rueberger/dense-correspondence:base
 
 USER andrew
 

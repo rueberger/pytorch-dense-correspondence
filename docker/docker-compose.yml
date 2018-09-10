@@ -7,6 +7,8 @@ services:
     volumes:
       - '/data/dense_seg:/home/andrew/code/data_volume'
       - 'torch:/home/andrew/torch'
+    ports:
+      - '172.30.0.0:9999:8888'
 
 
 networks:

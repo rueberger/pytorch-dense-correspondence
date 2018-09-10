@@ -1,11 +1,12 @@
 version: '3.4'
 services:
-  image: 'rueberger/dense-correspondence'
-  networks:
-    - core
-  volumes:
-    - '/data/dense_seg:/home/andrew/code/data_volume'
-    - 'torch:/home/andrew/torch'
+  dense-seg:
+    image: 'rueberger/dense-correspondence'
+    networks:
+      - core
+    volumes:
+      - '/data/dense_seg:/home/andrew/code/data_volume'
+      - 'torch:/home/andrew/torch'
 
 
 networks:

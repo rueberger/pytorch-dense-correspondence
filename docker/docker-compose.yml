@@ -1,6 +1,5 @@
 version: '3.4'
 services:
-  dense_seg:
   image: 'rueberger/dense-correspondence'
   networks:
     - core

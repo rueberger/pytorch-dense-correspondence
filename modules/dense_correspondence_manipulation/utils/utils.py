@@ -91,11 +91,7 @@ def set_cuda_visible_devices(gpu_list):
     os.environ["CUDA_VISIBLE_DEVICES"] = cuda_visible_devices
 
 def set_default_cuda_visible_devices():
-    config = get_defaults_config()
-    host_name = socket.gethostname()
-    user_name = getpass.getuser()
-    gpu_list = config[host_name][user_name]["cuda_visible_devices"]
-    set_cuda_visible_devices(gpu_list)
+    set_cuda_visible_devices([])
 
 def get_defaults_config():
     dc_source_dir = getDenseCorrespondenceSourceDir()
@@ -306,4 +302,3 @@ class CameraIntrinsics(object):
         height = config['image_height']
 
         return CameraIntrinsics(cx, cy, fx, fy, width, height)
-

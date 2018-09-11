@@ -1,7 +1,5 @@
 FROM rueberger/dense-correspondence:base
 
-RUN chown -R andrew:andrew /home/andrew/torch
-
 USER andrew
 
 WORKDIR /home/andrew/
